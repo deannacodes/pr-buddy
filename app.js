@@ -20,8 +20,11 @@ console.log('[+] Notifier server started at port ' + port);
 
 /****** SET OWN WEBHOOK *******/
 server.post(variables.webhookPath, (req, res) => {
-  if ((variables.userAgent && req.headers["user-agent"].includes(variables.userAgent)) ||
-    (variables.expectedIp && req.headers["x-forwarded-for"].includes(variables.expectedIp))) {
+  if (
+    (variables.userAgent && req.headers["user-agent"].includes(variables.userAgent)) ||
+    (variables.expectedIp && req.headers["x-forwarded-for"].includes(variables.expectedIp)) ||
+    (!variables.userAgent && !variables.expectedIp)
+    ) {
     res.sendStatus(200)
     sender.sendMessages(req.body.pullRequest)
   } else {
