@@ -1,0 +1,18 @@
+{
+  "name": "pr-buddy",
+  "version": "1.0.0",
+  "description": "Slackbot who notifies you when a PR is ready from your repo in Bitbucket",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "request": "^2.88.0"
+  }
+}

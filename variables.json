@@ -1,0 +1,8 @@
+{
+  "message": "You are a reviewer on a new Pull Request!",
+  "gifUrl": "https://media.giphy.com/media/j3hp3iEdq3UU3sJGCk/giphy.gif",
+  "webhookPath": "/webhook/for/pullrequest/alert",
+  "userAgent": "(Can be blank for less security) Text you expect the webhook post 'userAgent' field to have",
+  "expectedIp": "(Can be blank for less security) Ip you expect the webhook post to come from",
+  "storeUsers": true //store users in a file or make a network request every time
+}
