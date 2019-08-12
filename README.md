@@ -4,7 +4,7 @@ Slack bot which alerts reviewers when a new pull request is made via Bitbucket S
 It works by getting the emails of the reviewers, then looking them up on your specified slack workspace, and sending them a DM. 
 
 # Create a Slack App
-Create an app through Slack. [Here's the docs](https://api.slack.com/#read_the_docs) for that. Install it to the workspace you're deploying it to.
+Create an app through Slack. [Here's the docs](https://api.slack.com/#read_the_docs) for that. Install it to the workspace you're deploying it to. You'll need to create a bot user and give these permissions: bot, chat:write:bot, users:read, and users:read.email.
 
 # Installation
 Clone the repository and run `npm install` to install required packages. Open `variables.json` in a text editor and plug in the info that you want. 
