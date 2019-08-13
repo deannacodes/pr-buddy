@@ -19,3 +19,6 @@ Once you've pushed to heroku, you'll need to set up an environment variable. In 
 In your Bitbucket Server repository that you want to notify the slackbot, go to settings -> webhooks. Paste in the webhook that you specified in `variables.json` and check the box for when pull requests are created. It'll look something like `http://my-slack-bot.heroku.com/webhook/for/pullrequest/alert`. 
 
 Thats it! All users who are assigned to a pull request should now get a DM in Slack when a PR is created that they've been assigned to.
+
+# License 
+This code is open source via the ISC Liscence. Enjoy!
